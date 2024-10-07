@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/header";
 import "./globals.css";
+import CreateEventDrawer from "@/components/create-event";
 
 export const metadata: Metadata = {
   title: "Schedulrr",
@@ -30,6 +31,7 @@ export default function RootLayout({
             </div>
           </footer>
           {/* Footer */}
+          <CreateEventDrawer />
         </body>
       </html>
     </ClerkProvider>
